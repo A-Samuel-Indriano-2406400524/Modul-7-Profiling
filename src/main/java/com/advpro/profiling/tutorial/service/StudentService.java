@@ -22,11 +22,11 @@ public class StudentService {
     @Autowired
     private StudentCourseRepository studentCourseRepository;
 
-    public List<StudentCourse> getAllStudentsWithCourses() {
+    public List<StudentCourse> getAllStudentsWithCourses(){
         return studentCourseRepository.findAll();
     }
 
-    public Optional<Student> findStudentWithHighestGpa() {
+    public Optional<Student> findStudentWithHighestGpa(){
         List<Student> students = studentRepository.findAll();
         Student highestGpaStudent = null;
         double highestGpa = 0.0;
@@ -39,13 +39,13 @@ public class StudentService {
         return Optional.ofNullable(highestGpaStudent);
     }
 
-    public String joinStudentNames() {
+    public String joinStudentNames(){
         List<Student> students = studentRepository.findAll();
-        String result = "";
-        for (Student student : students) {
-            result += student.getName() + ", ";
+        StringBuilder result = new StringBuilder();
+
+        for (Student student : students){
+            result.append(student.getName()).append(", ");
         }
         return result.substring(0, result.length() - 2);
     }
 }
-
