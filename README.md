@@ -1,23 +1,30 @@
-## JMeter GUI Results
-
+## JMeter Results
 ### `/all-student-name`
-![JMeter GUI Tree - all-student-name](images/jmeter-gui-tree-all-student-name.png)
-![JMeter GUI Table - all-student-name](images/jmeter-gui-table-all-student-name.png)
-![JMeter GUI Summary - all-student-name](images/jmeter-gui-summary-all-student-name.png)
-![JMeter GUI Graph - all-student-name](images/jmeter-gui-graph-all-student-name.png)
+![JMeter GUI Summary - all-student-name (Before)](images/jmeter-gui-summary-all-student-name-before.png)
+![JMeter CLI - all-student-name (Before)](images/jmeter-cli-all-student-name-before.png)
+![JMeter GUI Summary - all-student-name (After)](images/jmeter-gui-summary-all-student-name-after.png)
+![JMeter CLI - all-student-name (After)](images/jmeter-cli-all-student-name-after.png)
 
 ### `/highest-gpa`
-![JMeter GUI Tree - highest-gpa](images/jmeter-gui-tree-highest-gpa.png)
-![JMeter GUI Table - highest-gpa](images/jmeter-gui-table-highest-gpa.png)
-![JMeter GUI Summary - highest-gpa](images/jmeter-gui-summary-highest-gpa.png)
-![JMeter GUI Graph - highest-gpa](images/jmeter-gui-graph-highest-gpa.png)
+![JMeter GUI Summary - highest-gpa (Before)](images/jmeter-gui-summary-highest-gpa-before.png)
+![JMeter CLI - highest-gpa (Before)](images/jmeter-cli-highest-gpa-before.png)
+![JMeter GUI Summary - highest-gpa (After)](images/jmeter-gui-summary-highest-gpa-after.png)
+![JMeter CLI - highest-gpa (After)](images/jmeter-cli-highest-gpa-after.png)
 
-## JMeter CLI Results
+### Conclusion from JMeter after optimizing
+Setelah melakukan profiling dan optimasi, saya melakukan performance test ulang dengan Jmeter untuk endpoint /all-student-name dan /highest-gpa, yang kemudian saya bandingkan lagi dengan hasil test Jmeter di awal sebelum optimasi.
 
-### `/all-student-name`
-![JMeter CLI - all-student-name](images/jmeter-cli-all-student-name.png)
-![JMeter Log - all-student-name](images/jmeter-log-all-student-name.png)
+Untuk endpoint /all-student-name, rata-rata response time sebelum optimasi adalah 1817 ms. Setelah dioptimasi, rata-rata response time turun menjadi 352 ms. Selain itu, throughput meningkat dari 4.0/sec menjadi 11.0/sec. Dari hasil ini, endpoint /all-student-name mengalami peningkatan performa yang jelas setelah optimasi.
 
-### `/highest-gpa`
-![JMeter CLI - highest-gpa](images/jmeter-cli-highest-gpa.png)
-![JMeter Log - highest-gpa](images/jmeter-log-highest-gpa.png)
+Untuk endpoint /highest-gpa, rata-rata response time sebelum optimasi adalah 168 ms. Setelah optimasi, rata-rata response time turun menjadi 14 ms. Throughput juga meningkat dari 9.4/sec menjadi 10.9/sec. Dari hasil ini, endpoint /highest-gpa juga mengalami peningkatan performa yang jelas setelah optimasi.
+
+Dari hasil tersebut, dapat disimpulkan bahwa optimasi yang dilakukan sangat meningkatkan performa dari kedua endpoint tersebut. Response time jadi jauh lebih rendah dan throughput meningkat.
+
+## Reflection
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
